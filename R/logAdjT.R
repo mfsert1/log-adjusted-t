@@ -7,7 +7,7 @@
 #' @param y A numeric vector representing sample 2.
 #' @return A list containing the original p-value and the corrected p-value.
 #' @export
-t_dec <- function(x, y) {
+logAdjT <- function(x, y) {
   # Perform standard t-test
   t_test_result <- t.test(x, y, var.equal = TRUE)
   t_val <- t_test_result$statistic
