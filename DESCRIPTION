@@ -2,13 +2,24 @@ Package: logAdjustedT
 Type: Package
 Title: The Log-Adjusted t-Statistic
 Version: 0.2.0
-Authors@R: 
-    c(person(given = "Mehmet Fatih", family = "Sert", role = c("aut","cre")),
-      person(given = "Mehmet Güven", family = "Günver", role = "aut"))
-Description: Implements the log-adjusted t-statistic that tempers n-driven inflation
-    of classical t-tests.
+Authors@R: c(
+    person("Mehmet Fatih", "Sert", role = c("aut", "cre")),
+    person("Mehmet Guven", "Gunver", role = "aut")
+)
+Maintainer: Mehmet Fatih Sert <fatih@example.edu.tr>
+Description: In large data sets, classical t-tests often overemphasize statistical
+    significance. With hundreds of thousands of observations, even negligible effects
+    can yield extremely low p-values, undermining interpretability. This package
+    implements the "log-adjusted t-statistic", a transformation of the classical
+    t-statistic that depends on the degrees of freedom. The method preserves classical
+    behavior in small samples but suppresses artificial sensitivity in large samples,
+    avoiding misleading significance. Monte Carlo simulations and real-world data show
+    that the log-adjusted t-statistic highlights only effects of substantive importance,
+    reducing false positives and improving trustworthiness in high-volume analyses.
+    The method bridges classical inference and modern big data contexts, with potential
+    applications across biomedical, social, and computational sciences.
 License: MIT + file LICENSE
-URL: https://github.com/mfsert1/log-adjusted-t, 
+URL: https://github.com/mfsert1/log-adjusted-t, https://mfsert1.github.io/log-adjusted-t/
 BugReports: https://github.com/mfsert1/log-adjusted-t/issues
 Depends: R (>= 3.6)
 Imports: stats, graphics, grDevices, utils
@@ -16,4 +27,3 @@ Suggests: knitr, rmarkdown, ggplot2, dplyr, tidyr, testthat (>= 3.0.0), viridis,
 VignetteBuilder: knitr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
