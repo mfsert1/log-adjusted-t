@@ -4,7 +4,7 @@ Title: The Log-Adjusted t-Statistic
 Version: 0.2.0
 Authors@R: 
     c(person(given = "Mehmet Fatih", family = "Sert", role = c("aut","cre")),
-      person(given = "Mehmet Güven", family = "Günver", role = "cre"))
+      person(given = "Mehmet Güven", family = "Günver", role = "aut"))
 Description: Implements the log-adjusted t-statistic that tempers n-driven inflation
     of classical t-tests.
 License: MIT + file LICENSE
