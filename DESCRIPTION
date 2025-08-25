@@ -1,11 +1,19 @@
-Package: decrementedTTest
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Package: logAdjustedT
+Type: Package
+Title: The Log-Adjusted t-Statistic
+Version: 0.2.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    c(person(given = "Mehmet Fatih", family = "Sert", role = c("aut","cre")),
+      person(given = "Mehmet Güven", family = "Günver", role = "cre"))
+Description: Implements the log-adjusted t-statistic that tempers n-driven inflation
+    of classical t-tests.
+License: MIT + file LICENSE
+URL: https://github.com/mfsert1/log-adjusted-t, 
+BugReports: https://github.com/mfsert1/log-adjusted-t/issues
+Depends: R (>= 3.6)
+Imports: stats, graphics, grDevices, utils
+Suggests: knitr, rmarkdown, ggplot2, dplyr, tidyr, testthat (>= 3.0.0), viridis, pkgdown
+VignetteBuilder: knitr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
