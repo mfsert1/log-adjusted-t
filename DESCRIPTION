@@ -10,14 +10,13 @@ Maintainer: Mehmet Fatih Sert <fatih@example.edu.tr>
 Description: In large data sets, classical t-tests often overemphasize statistical
     significance. With hundreds of thousands of observations, even negligible effects
     can yield extremely low p-values, undermining interpretability. This package
-    implements the "log-adjusted t-statistic", a transformation of the classical
+    implements the log-adjusted t-statistic, a transformation of the classical
     t-statistic that depends on the degrees of freedom. The method preserves classical
     behavior in small samples but suppresses artificial sensitivity in large samples,
     avoiding misleading significance. Monte Carlo simulations and real-world data show
     that the log-adjusted t-statistic highlights only effects of substantive importance,
     reducing false positives and improving trustworthiness in high-volume analyses.
-    The method bridges classical inference and modern big data contexts, with potential
-    applications across biomedical, social, and computational sciences.
+    The method bridges classical inference and modern big data contexts.
 License: MIT + file LICENSE
 URL: https://github.com/mfsert1/log-adjusted-t, https://mfsert1.github.io/log-adjusted-t/
 BugReports: https://github.com/mfsert1/log-adjusted-t/issues
